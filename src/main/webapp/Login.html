@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+	<meta charset="UTF-8">
+	<title>Login Form</title>
+	<style>
+		body {
+			background-color: #87CEFA;
+			font-family: Arial, sans-serif;
+			font-size: 24px;
+			text-align: center;
+			color: #000000;
+		}
+		
+		h1 {
+			font-size: 48px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			color: #000000;
+			text-shadow: 2px 2px #87CEFA;
+		}
+		
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: #FFFFFF;
+			border-radius: 10px;
+			padding: 20px;
+			box-shadow: 5px 5px #87CEFA;
+		}
+		
+		input[type="text"], input[type="password"], input[type="radio"], input[type="submit"] {
+			font-size: 24px;
+			color: #000000;
+			margin-bottom: 20px;
+			padding: 10px;
+			border-radius: 10px;
+			border: none;
+			background-color: #87CEFA;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		
+		input[type="radio"]:hover {
+			background-color: #000000;
+			color: #87CEFA;
+		}
+		
+		input[type="submit"]:hover {
+			background-color: #000000;
+			color: #87CEFA;
+		}
+		
+		input[type="text"], input[type="password"], input[type="radio"], input[type="submit"]:focus {
+			outline: none;
+		}
+		
+		label {
+			display: block;
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+
+		.back-button {
+			font-size: 24px;
+			padding: 10px 20px;
+			border-radius: 10px;
+			border: none;
+			background-color: #000000;
+			color: #87CEFA;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+
+		.back-button:hover {
+			background-color: #87CEFA;
+			color: #000000;
+		}
+	</style>
+</head>
+<body>
+	<h1>Login Form</h1>
+	<form action="Verify" method="post">
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username">
+		<label for="pass">Password:</label>
+		<input type="password" id="pass" name="pass">
+		<label for="rd">User Type:</label>
+		<input type="radio" id="user" name="rd" value="user">
+		<label for="user">User</label>
+		<input type="radio" id="admin" name="rd" value="admin">
+		<label for="admin">Admin</label>
+		<input type="submit" value="Submit">
+
+	</form>
+</body>
+</html>
